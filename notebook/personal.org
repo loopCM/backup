@@ -1,0 +1,381 @@
+
+* TODO  [[www.dotemacs.de][针对Emacs 网站]] 
+   DEADLINE: <2011-08-22 Mon>
+
+   
+* 悲催的事情
+  DEADLINE: <2011-08-22 Mon>
+  
+
+
+* 重构原则
+
+
+#+TITLE: index
+
+     + cpp
+     + [[file:cpp/cpp20041105.org][gcc&&make杂记]]
+     + [[file:cpp/cpp20041106.org][对gcc的理解]]
+     + [[file:cpp/cpp20041107.org][c++的注释]]
+     + [[file:cpp/cpp20041110.org][boost库学习]]
+     + [[file:cpp/cpp20041111.org][boost库]]
+     + [[file:cpp/cpp20041122.org][boost::ref]]
+     + [[file:cpp/cpp20041123.org][boost::any]]
+     + [[file:cpp/cpp20041125.org][boost::concept_check]]
+     + [[file:cpp/cpp20041127.org][boost::random]]
+     + [[file:cpp/cpp20041128.org][boost::utility]]
+     + [[file:cpp/cpp20041130.org][boost:is_convertable]]
+     + [[file:cpp/cpp20041202.org][boost::smart_ptr]]
+     + [[file:cpp/cpp20041203.org][boost其它]]
+     + [[file:cpp/cpp20050914.org][MinGW编译wxWidget静态库的问题]]
+     + [[file:cpp/cpp20080401.org][c++标准库总结]]
+     + [[file:cpp/cpp20080417.org][关于临时对象的引用]]
+     + [[file:cpp/cpp20080418.org][用ScopeGuard简化异常安全代码]]
+     + [[file:cpp/cpp20100928.org][vs_list的问题]]
+   + design
+     + [[file:design/design20041122.org][重构原则]]
+     + [[file:design/design20041123.org][重构：重新组织函数]]
+     + [[file:design/design20041125.org][设计模式]]
+     + [[file:design/design20041201.org][创建型模式－Abstract Factory(抽象工厂)]]
+     + [[file:design/design20041214.org][对象创建型模式－Builder(生成器)]]
+   + emacs
+     + [[file:emacs/emacs20041102.org][设置emacs的编码]]
+     + [[file:emacs/emacs20041103.org][emacs的操作]]
+     + [[file:emacs/emacs20041119.org][emacs使用技巧]]
+     + [[file:emacs/emacs20041122.org][emacs的查找和替换]]
+     + [[file:emacs/emacs20041123.org][在emacs中使用ecb]]
+     + [[file:emacs/emacs20041125.org][emacs的正则表达式]]
+     + [[file:emacs/emacs20071210.org][我使用的几个emacs扩展]]
+     + [[file:emacs/emacs20080328.org][emacs中使用五笔]]
+     + [[file:emacs/emacs20080928.org][emacs使用semantic]]
+     + [[file:emacs/emacs20081118.org][yasnippet]]
+     + [[file:emacs/emacs20081203.org][在MacOS X下编译emacs23]]
+     + [[file:emacs/emacs20081219.org][imenu不能创建objc的tag的问题]]
+     + [[file:emacs/emacs20090112.org][emacs的列模式]]
+     + [[file:emacs/emacs20090121.org][ediff]]
+     + [[file:emacs/emacs20090303.org][使用jde编辑java]]
+     + [[file:emacs/emacs20090304.org][使用ropemacs对python代码进行补全]]
+     + [[file:emacs/emacs20090416.org][company-mode]]
+     + [[file:emacs/emacs20090726.org][用org代替muse记日记]]
+     + [[file:emacs/emacs20090727.org][emacs中用ispell检查拼写错误]]
+     + [[file:emacs/emacs20090728.org][ffap]]
+     + [[file:emacs/emacs20090729.org][emacs里的可视化书签]]
+     + [[file:emacs/emacs20090730.org][emacs-23.1发布]]
+     + [[file:emacs/emacs20090807.org][emacs的Local Variables和vim的Modeline]]
+     + [[file:emacs/emacs20090922.org][company-0.4.3中ropemacs的问题]]
+     + [[file:emacs/emacs20091205.org][emacs中用gdb调试]]
+     + [[file:emacs/emacs20100308.org][用CEDET浏览和编辑C++代码]]
+     + [[file:emacs/emacs20100508.org][用CEDET浏览和编辑C++代码(续) - 使用emacs-23.2内置的CEDET]]
+     + [[file:emacs/emacs20100601.org][自定义emacs工具栏]]
+     + [[file:emacs/emacs20101205.org][用flymake检测C/C++语法]]
+   + iphone
+     + [[file:iphone/iphone20090915.org][Audio Session 编程指南(摘要翻译)]]
+     + [[file:iphone/iphone20090924.org][SDK3.0免证书(iDP)联机调试]]
+   + linux
+     + [[file:linux/linux20041105.org][用screen挂bbs]]
+     + [[file:linux/linux20041106.org][配置apache2使用能访问用户目录]]
+     + [[file:linux/linux20041107.org][配置squid使支持匿名访问]]
+     + [[file:linux/linux20041111.org][debian的几个sources.list源]]
+     + [[file:linux/linux20041116.org][debian安装小结]]
+     + [[file:linux/linux20041203.org][debian下samba的安装]]
+     + [[file:linux/linux20041218.org][在debian下使用fvwm]]
+     + [[file:linux/linux20080411.org][用getopt处理命令行参数]]
+     + [[file:linux/linux20080424.org][ubuntu8.04LTS发布]]
+     + [[file:linux/linux20080428.org][tex入门]]
+     + [[file:linux/linux20080902.org][用vim作IDE]]
+     + [[file:linux/linux20081222.org][automake备忘]]
+     + [[file:linux/linux20081223.org][常用命令惯用法]]
+     + [[file:linux/linux20090921.org][grub2调整framebuffer分辨率]]
+     + [[file:linux/linux20091110.org][在Linux下mount windows共享]]
+     + [[file:linux/linux20100106.org][在gdb中查看stl容器]]
+     + [[file:linux/linux20100412.org][Solaris10下gdb调试64位程序]]
+     + [[file:linux/linux20100424.org][通过代理apt-get]]
+     + [[file:linux/linux20100501.org][硬盘安装ubuntu 10.04]]
+     + [[file:linux/linux20101019.org][VirtualBox-3.2.10安装ubuntu-10.10启动桌面特效]]
+   + mac
+     + [[file:mac/mac20041117.org][powerplant中broadcast和command的一点体会]]
+     + [[file:mac/mac20041118.org][powerplant中view的click消息处理]]
+     + [[file:mac/mac20041203.org][powerplant中的消息处理]]
+     + [[file:mac/mac20050112.org][powerplant中的命令和消息]]
+     + [[file:mac/mac20050301.org][cocoa-awakeFromNib]]
+     + [[file:mac/mac20050304.org][cocoa-从.nib文件动态生成实例]]
+     + [[file:mac/mac20050325.org][cocoa笔记１]]
+     + [[file:mac/mac20050330.org][ZeroLink]]
+     + [[file:mac/mac20050331.org][多线程及其它]]
+     + [[file:mac/mac20050627.org][关于iterm的中文输入]]
+     + [[file:mac/mac20080608.org][cocoa的KVO以及loadNib]]
+     + [[file:mac/mac20090923.org][OSX10.5中的git]]
+   + misc
+     + [[file:misc/db20080417.org][sqlite3, access, sqlserver2000的编码设置]]
+     + [[file:misc/doxygen20041130.org][用doxygen为程序生成文档]]
+     + [[file:misc/unicode20080429.org][编码知识小结]]
+     + [[file:misc/virtual20081220.org][虚拟化技术分类]]
+   + other
+     + [[file:other/die.org][人固有一死]]
+   + python
+     + [[file:python/python20041120.org][python笔记1]]
+     + [[file:python/python20041121.org][python笔记2]]
+     + [[file:python/python20041122.org][python笔记3]]
+     + [[file:python/python20080411.org][python中使用getopt]]
+     + [[file:python/python20080414.org][python的模块和包]]
+     + [[file:python/python20080415.org][python与C/C++的不同]]
+     + [[file:python/python20080417.org][import]]
+     + [[file:python/python20080418.org][类]]
+     + [[file:python/python20080419.org][异常]]
+     + [[file:python/python20080421.org][python的内置工具]]
+     + [[file:python/python20080422.org][python的unicode支持]]
+     + [[file:python/python20080423.org][python的正则表达式]]
+     + [[file:python/python20080424.org][用struct模块处理二进制数据]]
+     + [[file:python/python20080425.org][python线程]]
+     + [[file:python/python20080505.org][wxPython学习1]]
+     + [[file:python/python20080512.org][wxPython学习2]]
+   + ruby
+     + [[file:ruby/ruby20080325.org][ruby学习笔记一]]
+     + [[file:ruby/ruby20080326.org][ruby学习笔记二]]
+     + [[file:ruby/ruby20080328.org][ruby学习笔记三]]
+     + [[file:ruby/ruby20080331.org][ruby学习笔记四]]
+   + vcs
+     + [[file:vcs/vcs20041103.org][cvs学习]]
+     + [[file:vcs/vcs20090406.org][几个分布式vcs比较]]
+     + [[file:vcs/vcs20090804.org][从git中永久删除文件以节省空间]]
+     + [[file:vcs/vcs20100424.org][通过代理访问github]]
+   + windows
+     + [[file:windows/windows20051121.org][Com中BSTR的使用]]
+     + [[file:windows/windows20060207.org][Com中内存申请和释放的规范]]
+     + [[file:windows/windows20060314.org][windows内核对象名字空间]]
+     + [[file:windows/windows20060315.org][safearray的使用]]
+     + [[file:windows/windows20080428.org][windows的线程互斥和同步]]
+     + [[file:windows/windows20080429.org][0xcd(205)问题]]
+     + [[file:windows/windows20080506.org][com组件和多接口]]
+
+*  for the sake of code readability :)
+   为了代码可读性行
+   [] One possible way to deal with being unfamiliar with something is to bec      ome familiar with it.
+一种可能的处理不熟悉事物的方法就是去熟悉它。
+
+* 读小工到专家的笺言
+** TODO 测试代码(早测试， 常测试， 自动测试) 
+   1. [] 单元测试
+      - [] 各个模块能工作 没有错误
+   2. [] 集成测试
+      - [] 
+   3. [] 验证和校验 
+      - [] 程序可以运行的情况下，试问是否为客户的需要
+   4. [] 资源耗尽及恢复
+      - [] 内存空间
+      - [] 磁盘空间
+      - [] CPU带宽
+      - [] 挂钟时间
+      - [] 磁盘时间
+      - [] 网络带宽
+      - [] 调色板
+      - [] 视频分辨率
+      - []
+   5. [] 性能测试
+      - [] 性能测试，压力测试或负载测试可能会是项目的一个重要方面
+        问问自己，软件是否能满足显示世界的条件下的性能需求--预期的用户数，连接数，或每秒的事务数， 它可以伸缩码？
+        对于有些应用，可能需要专门的测试硬件或软件模拟现实情况下的负载
+   6. [] 可用性测试
+      - [] 换位思考 
+   7. ...
+      
+
+* c++项目的敏捷实践
+** C++语言
+   [] C++是一门适合大型系统开发的语言
+   [] 嵌入式系统
+   [] 实时系统
+   [] 高性能计算
+   [] 系统编程
+   [] 游戏
+*** C++和敏捷
+    敏捷开发实践与语言无关
+    . 挑战主要来自于
+    - 社区文化
+    - 技术细节
+
+****  1. [] 社区文化
+     . 社区文化或许是最大的挑战
+     - 保守
+     - 对于变化的恐惧
+     - 错误的假设
+     - 流程
+       . 瀑布式流程
+       . 无流程
+
+       一些常见态度
+       . "聪明"受到推崇
+     - 滥用宏
+     - 滥用模板
+     - 不必要的微观优化
+       . BUFD
+       . 测试是别人的事
+     - Debug是解决问题的主要实践
+       . 维护不包括重构
+     - 一部分原因是语言自身的特点
+
+       可能的改变
+       . 测试驱动开发
+       . 固定短周期的跌代
+       . 每日构建/持续集成
+       . 重构
+       . 松耦合设计
+
+****      测试驱动开发
+
+       单元测试
+       . 为了做好单元测试, 你需要
+     - 一个合适的单元测试框架
+     - 一个合适的mock框架
+     - 一个合适的IDE/编辑器
+     - 定义你的单元测试管理策略
+
+       单元测试框架
+       . CppUnit
+       . CppUnitLite
+       . Boost.Test
+       . CxxTest
+
+       Mock框架
+       . mockpp (mockpp.sourceforge.net)
+       -revised-mockpp (code.google.com/p/revised-mockpp)
+       . mockcpp
+
+       IDE
+       . Eclipse CDT
+       . SlickEdit 2008
+       . Xrefactory C++
+
+*****      单元测试构建策略
+       . 规划你的目录结构以便单元测试用例的查找
+       + project
+       + include
+       + #+BEGIN_SRC 
+         
+#+END_SRC
+         
+       + subsystem0
+       + subsystem1
+       + subsystem2
+       + test
+       + ft
+       + ut
+       + system0
+       + class0
+       + class1
+       + system1
+       + class3
+       + system2
+         . 创建一个单元测试套件应该尽可能的简单
+         - IDE的支持
+         - 选择一个使用简单的单元测试框架
+         - 编写一个脚本
+           . 一个脚本可以构建所有的单元测试
+           . 可以独立运行单个测试
+           . 可以独立运行单个测试套件
+           . 能够统计所有的单元测试成功率
+           . 能够将单元测试运行结果汇报给持续集成工具
+           
+****           构建速度
+           . 良好的依赖管理
+         - 物理依赖
+           . 单一职责的头文件
+           . 除非真正必要，否则不要在头文件中定义inline函数
+           . 使用前导声明，而不是直接包含相关头文件
+           . 把尽量多的东西放到源文件而不是头文件
+           . 经常清理不必要的头文件包含
+         - 逻辑依赖
+           . 优先考虑委托而不是继承
+           . 面向接口的设计
+           . 依赖注入
+           
+           . 良好的构建策略
+         - 分粒度的构建策略
+         - 将所依赖的相对稳定的源文件的目标文件放入Repository
+         - 考虑网络流量对于构建速度的影响
+         - 预编译头文件
+         - 联合编译
+         - 增量式编译
+         - 分布式编译
+           
+****           分布式编译工具
+           distcc/ccache
+           
+****           增量式编译
+           . 头文件依赖的自动管理
+         - 编译器选项 + GNU make
+         - automake
+           
+****          语言复杂性
+           . C++是一个多范型的编程语言
+           . 陷井太多, 容易误用
+           . 全面掌握C++需要投入更多的精力
+           
+****           经验与技能
+           . 经验和技能对于团队的成功至关重要
+         - 语言
+         - 工具
+         - 实践
+           . 经验缺乏导致C++项目的"偶发复杂度"非常高
+           
+****          结对编程
+           
+           共享责任/代码集体所有权
+           
+           持续集成
+           . C++项目平台相关性
+         - 要求必须在多种平台搭建持续集成环境
+         - 嵌入式真实环境
+         - 分离环境无关, 可在非产品环境中运行的测试. 如平台无关的单元测试, 代码质量检查
+         - 支持平台匹配的CI工具
+           
+           . 大型C++项目的集时间
+         - 一次集成和验证或许需要超过一天的时间
+         - 重构测试用例
+         - 优化构建策略
+         - 并行运行不同的测试
+           
+           . 大量现存的工具没有考虑持续集成的需要
+         - 基于CUI的人机交互
+         - 无法获知工具执行的状态
+           
+           . 选取更合适的工具或完善自有工具
+           
+           持续集成工具
+           . CruiseControl
+           . LuntBuild
+           . ThougthWorks Cruise
+           
+****           遗留系统
+           . 糟糕的依赖管理
+         - 超大的文件
+         - 过长的函数
+         - God Object
+         - 过多的依赖具体实现
+         - 到处存在的Singleton
+         - 滥用继承
+           
+           . 错误的假设
+         - 多重继承的偏见
+         - 虚函数的偏见
+         - 匈牙利命名法
+         - 不合理的惯用用法
+
+           . 过高的复杂度
+         - 过度设计
+         - 对于语言的不完善掌握所引入的不必要的复杂度
+         - "聪明"所引入的复杂度
+         - 大量的重复代码
+         - 糟糕的抽象
+         - 没有人能够了解整个系统
+           
+           . 缺少自动化测试用例
+         - 不可测试的设计
+         - 对于变化的恐惧
+           
+           遗留系统 - 解决方案
+           . 忍受
+           . 重新设计并实现
+           . <<修改代码的艺术>>
+
+

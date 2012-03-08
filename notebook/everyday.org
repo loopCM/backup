@@ -1,0 +1,25 @@
+#+ title everyday life    write down your idea and do it one anad one
+#+author Litong Su
+#+STARTUP
+
+##### first -> six   more and more important
+    
+#+TAGS FIRST(一) SECOND(二) THIRD(三) FORTH（四） FIVE（五） SIX（六）    
+    
+* DONE 你预习了么？？                                                 :FORTH:
+  CLOSED: [2012-03-07 三 22:06]
+  - [] 今天需要做的事情有， coding
+  - [] 充电学习 
+  - [] 英语半个小时时间
+  - []  
+**  TODO tomorrow plan     
+   
+
+* 搭建一个简单的框架 实现简单的抓取数据的实现                              :FIVE:
+* TODO 完成think三个功能的实现
+    [1] 一个socket的封装
+    [2] 一个file
+    [3] 一些基础的东西， 常用数据，以及需要的一些逻辑操作
+    [4] 相关的一些文件的分析，封装必要的数据
+    [5] 网络协议的封装
+    
